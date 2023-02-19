@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Exam_inadv_4
 {
@@ -22,8 +22,10 @@ namespace Exam_inadv_4
                 sumProductDegrees += productDegrees;
             }
             averageDegrees = sumProductDegrees / sumQuantity;
-            Console.WriteLine("Liter: {0:f2}", sumQuantity);
-            Console.WriteLine("Degrees: {0:f2}", averageDegrees);
+
+            Console.WriteLine($"Liter: {sumQuantity:f2}");
+            Console.WriteLine($"Degrees: {averageDegrees:f2}");
+
             if (averageDegrees < 38)
             {
                 Console.WriteLine("Not good, you should baking!");
@@ -38,4 +40,4 @@ namespace Exam_inadv_4
             }
         }
     }
-    }
+}
